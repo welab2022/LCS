@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        form{
+            border: solid;
+            margin-top: 200px;
+            width: 500px;
+            margin-left: 500px;
+        }
+        table{
+            margin: auto;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        #middle{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="success()">
+        <table>
+            <tr>
+                <td>Email: <input type="email" id="Mail" required></td>
+            </tr>
+            <tr>
+                <td>Password:<input type="password" id="Pass" required></td>
+            </tr>
+            <tr>
+                <td id="middle"><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function success(){
+            var mail=$("#Mail").val();
+            var pass=$("#Pass").val();
+            var email="abc@gmail.com";
+            var password="abc456"; 
+
+            if (pass==password && mail==email){
+                alert("Welcome to the main page!!");
+            }else{
+                alert("The email or password is incorrect");
+            }
+        }   
+    </script>
+</body>
+</html>

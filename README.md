@@ -1,2 +1,0 @@
-# LCS
-Learning Center System

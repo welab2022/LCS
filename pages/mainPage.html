@@ -60,27 +60,30 @@
             <nav class="navbar navbar-expand-sm bg-light">
                 <div class="container-fluid">
                   <button class="btn btn-outline-success" id="sidebarToggle">Menu</button>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
+                         -----
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><a class="dropdown-item" href="#">Students</a></li>
+                          <li><a class="dropdown-item" href="#">Courses</a></li>
+                          <!-- <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                         </ul>
                       </li>
                       
                     </ul>
-                    <form class="d-flex  me-auto" role="search">
+                    <form class="d-flex  me-auto w-50" role="search">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-search me-3" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                         </svg>
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <input class="form-control w-50" type="search" placeholder="Search for Enrollments, Courses, Students, etc" aria-label="Search">
                       <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                     <div class="navbar-nav me-3 mb-2 mb-lg-0 mr-lg-3">
@@ -96,7 +99,7 @@
                 </div>
             </nav>
             <!-- Page content-->
-            <div class="container-fluid">
+            <div class="container-fluid " >
               <h2 class="mt-5">Locations</h2>
               <table class="table ">
                 <thead>
@@ -106,6 +109,7 @@
                     <th scope="col">#Classes</th>
                     <th scope="col">Status</th>
                     <th scope="col">Last view</th>
+                    <th scope="col"></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -116,6 +120,7 @@
                     <td>10</td>
                     <td>Opening</td>
                     <td>6/3/2022 4:38:29</td>
+                    <td class="btn btn-outline-success p-0">Delete</td>
                   </tr>
                   <tr>
                     
@@ -124,6 +129,7 @@
                     <td>5</td>
                     <td>Closed</td>
                     <td>6/3/2022 4:38:29</td>
+                    <td class="btn btn-outline-success p-0">Delete</td>
                   </tr>
                 </tbody>
               </table>

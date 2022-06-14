@@ -11,6 +11,10 @@ const Navbar = () => {
         document.getElementById('menu').classList.toggle('active');
       
     }
+    const handleLogout = ()=>{
+      localStorage.clear();
+      window.location.replace("/login");
+    }
   return (
     <nav className="navbar navbar-expand-sm bg-light">
                 <div className="container-fluid">
@@ -44,7 +48,9 @@ const Navbar = () => {
                     <div className="navbar-nav d-flex flex-row" id="account">
                           <img className="rounded-circle" src="https://avatars.githubusercontent.com/u/84139131?v=4" alt="" height="40px" width="40px"/>
                           <span className="my-auto ms-3 ">VanHung@gmail.com</span>
+                          <button className='logout btn btn-outline-success' onClick={handleLogout}>Logout</button>
                       </div>
+                      
                     
                   </div>
                 </div>

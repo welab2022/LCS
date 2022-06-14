@@ -15,9 +15,14 @@ const LoginPage = () => {
   });
   const onSubmit = async(data) => {
     console.log(data)
+    
     try{
-      const user = await loginApi(data);
-      console.log(user)
+      const user = await loginApi(JSON.stringify(data));
+      let access_token = user.access_token;
+      if(access_token){
+        localStorage.setItem("access_token",access_token);
+        window.location.replace("/");
+      }
     }catch(errors){
       console.log(errors)
     }
